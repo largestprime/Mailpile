@@ -526,7 +526,7 @@ def _UrlCheck(url):
     """
     uri = urlparse(url)
     if not uri.scheme in URI_SCHEMES:
-        raise ValueError(_("Not a valid url: %s") % url)
+        raise ValueError(_("Not a valid URL: %s") % url)
     else:
         return url
 
